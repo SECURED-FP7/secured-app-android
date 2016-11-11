@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=/home/lorenzo/Scrivania/CrossCompilandi/Generati/Prefix
+exec_prefix=/home/lorenzo/Scrivania/CrossCompilandi/Generati/Eprefix
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libpcreposix
+Description: PCREPosix - Posix compatible interface to libpcre
+Version: 8.12
+Libs: -L${libdir} -lpcreposix
+Cflags: -I${includedir} 
+Requires.private: libpcre

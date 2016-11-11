@@ -1,0 +1,11 @@
+prefix=/home/lorenzo/Documenti/PoliTo/Tesi/StrongswanLibjson-c/trustswan/NewPlugins/CrossCompilandiv7/GeneratiDaNettle-2.7.1/Prefix
+exec_prefix=/home/lorenzo/Documenti/PoliTo/Tesi/StrongswanLibjson-c/trustswan/NewPlugins/CrossCompilandiv7/GeneratiDaNettle-2.7.1/Eprefix
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: Nettle
+Description: Nettle low-level cryptographic library (symmetric algorithms)
+URL: http://www.lysator.liu.se/~nisse/nettle
+Version: 2.7.1
+Libs: -L${libdir} -lnettle
+Cflags: -I${includedir}

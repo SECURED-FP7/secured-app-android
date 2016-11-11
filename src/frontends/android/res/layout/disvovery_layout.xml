@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    >
+
+   	<TextView
+        android:id="@+id/Discovery_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/hello_world"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/darkblue"
+        android:textSize="32sp"/>
+        
+        <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#660000"
+        android:textSize="22sp"
+        android:textStyle="normal|bold|italic"
+        android:typeface="monospace"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/Wait_for_responce" />
+
+        <ImageView
+            android:id="@+id/noFrog"
+            android:layout_width = "250dp"
+			android:layout_height= "250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/no_ned" 
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/siFrog"
+            android:layout_width = "300dp"
+			android:layout_height= "300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/si_ned"
+            android:visibility="invisible" />
+
+       
+
+        <TextView
+            android:id="@+id/Info_tunnel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonVPN"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-light"
+        	android:textColor="@color/darkred"
+        	android:textSize="25sp"
+        	
+        	android:typeface="monospace"
+        	android:gravity="center"
+            android:text="@string/vpn_instruction"
+             />
+        
+         <Button
+            android:id="@+id/buttonVPN"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="14dp"
+            android:text="@string/tunnelButton" 
+            android:onClick="startTunnelMode"/>
+
+         <TextView
+             android:id="@+id/text_time"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_above="@+id/Info_tunnel"
+             android:layout_alignLeft="@+id/Info_tunnel"
+             android:layout_marginBottom="20dp"
+             android:visibility="invisible"
+             android:text="TextView" />
+
+         <TextView
+             android:id="@+id/gw_addr"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/Discovery_label"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="6dp"
+             android:gravity="center"
+       		 android:text="@string/hello_world"
+       		 android:fontFamily="sans-serif-light"
+       		 android:textColor="@color/darkred"
+       		 android:textSize="27sp"
+          />
+
+         <TextView
+             android:id="@+id/ca_descr"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_below="@+id/gw_addr"
+             android:fontFamily="sans-serif-light"
+             android:gravity="center"
+             android:text="@string/hello_world"
+             android:textColor="@color/darkblue"
+             android:textSize="32sp" />
+    
+</RelativeLayout>

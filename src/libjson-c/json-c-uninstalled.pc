@@ -1,0 +1,11 @@
+prefix=
+exec_prefix=
+libdir=/home/lorenzo/Documenti/PoliTo/Tesi/StrongswanLibjson-c/trustswan/src/libjson-c
+includedir=/home/lorenzo/Documenti/PoliTo/Tesi/StrongswanLibjson-c/trustswan/src/libjson-c
+
+Name: json
+Description: JSON implementation in C
+Version: 0.12.99
+Requires:
+Libs:  -L/home/lorenzo/Documenti/PoliTo/Tesi/StrongswanLibjson-c/trustswan/src/libjson-c -ljson-c
+Cflags: -I/home/lorenzo/Documenti/PoliTo/Tesi/StrongswanLibjson-c/trustswan/src/libjson-c
